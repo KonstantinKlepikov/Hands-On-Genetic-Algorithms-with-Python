@@ -101,7 +101,7 @@ def main():
     print("Number of violations = ", nQueens.getViolationsCount(solution))
 
     plot = nQueens.plotBoard(solution)
-    plot.show()
+    plot.savefig("img_queens.png")
 
 
 if __name__ == "__main__":

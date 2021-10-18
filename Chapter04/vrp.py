@@ -168,11 +168,13 @@ def main():
     randomSolution = random.sample(range(len(vrp)), len(vrp))
     print("random solution = ", randomSolution)
     print("route breakdown = ", vrp.getRoutes(randomSolution))
+    print("total distance = ", vrp.getTotalDistance(randomSolution))
     print("max distance = ", vrp.getMaxDistance(randomSolution))
 
     # plot the solution:
     plot = vrp.plotData(randomSolution)
-    plot.show()
+    plot.savefig("img_vrp.png")
+
 
 
 if __name__ == "__main__":

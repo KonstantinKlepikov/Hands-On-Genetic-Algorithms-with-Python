@@ -85,6 +85,7 @@ def main():
     # plot best solution:
     plt.figure(1)
     tsp.plotData(best)
+    plt.savefig("img1.png")
 
     # plot statistics:
     minFitnessValues, meanFitnessValues = logbook.select("min", "avg")
@@ -97,7 +98,7 @@ def main():
     plt.title('Min and Average fitness over Generations')
 
     # show both plots:
-    plt.show()
+    plt.savefig("img2.png")
 
 
 if __name__ == "__main__":

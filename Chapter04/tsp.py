@@ -164,7 +164,7 @@ def main():
 
     # plot the solution:
     plot = tsp.plotData(optimalSolution)
-    plot.show()
+    plot.savefig("img.png")
 
 
 if __name__ == "__main__":

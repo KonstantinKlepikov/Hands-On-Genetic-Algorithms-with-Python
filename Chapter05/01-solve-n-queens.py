@@ -93,13 +93,15 @@ def main():
     plt.xlabel('Generation')
     plt.ylabel('Min / Average Fitness')
     plt.title('Min and Average fitness over Generations')
+    
+    plt.savefig("img_queens_02.png")
 
     # plot best solution:
     sns.set_style("whitegrid", {'axes.grid' : False})
     nQueens.plotBoard(hof.items[0])
 
     # show both plots:
-    plt.show()
+    plt.savefig("img_queens_01.png")
 
 
 if __name__ == "__main__":
