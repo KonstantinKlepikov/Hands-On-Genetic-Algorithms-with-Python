@@ -115,7 +115,8 @@ def main():
     print("Cost = ", gcp.getCost(solution))
 
     plot = gcp.plotGraph(solution)
-    plot.show()
+    plot.savefig("img_graphs.png")
+
 
 
 if __name__ == "__main__":

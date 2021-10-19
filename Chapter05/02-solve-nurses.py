@@ -95,7 +95,7 @@ def main():
     plt.xlabel('Generation')
     plt.ylabel('Min / Average Fitness')
     plt.title('Min and Average fitness over Generations')
-    plt.show()
+    plt.savefig("img_nurses_01.png")
 
 
 if __name__ == "__main__":
