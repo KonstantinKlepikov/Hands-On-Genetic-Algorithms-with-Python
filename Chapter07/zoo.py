@@ -27,7 +27,7 @@ class Zoo:
         self.y = self.data.iloc[:, 16]
 
         # split the data, creating a group of training/validation sets to be used in the k-fold validation process:
-        self.kfold = model_selection.KFold(n_splits=self.NUM_FOLDS, random_state=self.randomSeed)
+        self.kfold = model_selection.KFold(n_splits=self.NUM_FOLDS)
 
         self.classifier = DecisionTreeClassifier(random_state=self.randomSeed)
 

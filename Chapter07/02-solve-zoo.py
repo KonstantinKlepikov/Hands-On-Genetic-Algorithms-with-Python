@@ -104,7 +104,7 @@ def main():
     plt.xlabel('Generation')
     plt.ylabel('Max / Average Fitness')
     plt.title('Max and Average fitness over Generations')
-    plt.show()
+    plt.savefig("img_zoo_01.png")
 
 
 if __name__ == "__main__":
