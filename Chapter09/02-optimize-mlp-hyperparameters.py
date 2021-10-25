@@ -32,7 +32,7 @@ RANDOM_SEED = 42
 random.seed(RANDOM_SEED)
 
 # create the classifier accuracy test class:
-test = mlp_hyperparameters_test.MlpHyperparametersTest(RANDOM_SEED)
+test = mlp_hyperparameters_test.MlpHyperparametersTest(None)
 
 toolbox = base.Toolbox()
 

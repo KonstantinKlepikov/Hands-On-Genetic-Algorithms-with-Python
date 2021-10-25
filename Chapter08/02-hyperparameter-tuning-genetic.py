@@ -34,7 +34,7 @@ RANDOM_SEED = 42
 random.seed(RANDOM_SEED)
 
 # create the classifier accuracy test class:
-test = hyperparameter_tuning_genetic_test.HyperparameterTuningGenetic(RANDOM_SEED)
+test = hyperparameter_tuning_genetic_test.HyperparameterTuningGenetic(None)
 
 toolbox = base.Toolbox()
 
@@ -131,7 +131,7 @@ def main():
     plt.xlabel('Generation')
     plt.ylabel('Max / Average Fitness')
     plt.title('Max and Average fitness over Generations')
-    plt.show()
+    plt.savefig("img_hyperparameter_01.png")
 
 
 if __name__ == "__main__":

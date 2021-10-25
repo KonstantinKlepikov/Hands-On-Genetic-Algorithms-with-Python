@@ -3,7 +3,7 @@ from sklearn import datasets
 from sklearn.neural_network import MLPClassifier
 
 from sklearn.exceptions import ConvergenceWarning
-from sklearn.utils.testing import ignore_warnings
+from sklearn.utils._testing import ignore_warnings
 
 from math import floor
 

@@ -58,7 +58,7 @@ class HyperparameterTuningGrid:
                                   param_grid=self.gridParams,
                                   cv=self.kfold,
                                   scoring='accuracy',
-                                  iid='False',
+                                #   iid='False',
                                   n_jobs=4)
 
         gridSearch.fit(self.X, self.y)
@@ -73,7 +73,7 @@ class HyperparameterTuningGrid:
                                                    cv=self.kfold,
                                                    scoring='accuracy',
                                                    verbose=True,
-                                                   iid='False',
+                                                #    iid='False',
                                                    n_jobs=4,
                                                    population_size=20,
                                                    gene_mutation_prob=0.30,
@@ -83,7 +83,7 @@ class HyperparameterTuningGrid:
 
 
 def main():
-    RANDOM_SEED = 42
+    RANDOM_SEED = None
     random.seed(RANDOM_SEED)
 
     # create a problem instance:
