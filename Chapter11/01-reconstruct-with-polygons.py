@@ -163,7 +163,7 @@ def main():
     plt.title('Min and Average fitness over Generations')
 
     # show both plots:
-    plt.show()
+    plt.savefig("img_rec_01.png")
 
 if __name__ == "__main__":
     main()
