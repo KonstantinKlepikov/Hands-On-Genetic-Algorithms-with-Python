@@ -7,7 +7,7 @@ import pickle
 from sklearn.neural_network import MLPRegressor
 
 from sklearn.exceptions import ConvergenceWarning
-from sklearn.utils.testing import ignore_warnings
+from sklearn.utils._testing import ignore_warnings
 
 INPUTS = 4
 HIDDEN_LAYER = 4
